@@ -132,6 +132,7 @@ const style = StyleSheet.create({
 
   container: {
     marginBottom: 66,
+    marginHorizontal:12
   },
   imagestyle: {
     width: 40,
@@ -152,7 +153,7 @@ const style = StyleSheet.create({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingBottom:2
+    paddingBottom:2,
   },
   fontSize: {
     fontSize: 18,

@@ -83,6 +83,7 @@ const FavoriteList = ({ navigation }) => {
         data={favoriteItems}
         renderItem={renderItem}
         keyExtractor={item => item.id.toString()}
+        style={{marginBottom:42}}
       />
     </SafeAreaView>
   );
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    marginBottom:48
+    
   },
   heading: {
     fontSize: 20,
@@ -100,7 +101,6 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     color:'white',
     alignSelf:'center',
-    paddingTop:16
   },
   item: {
     flexDirection: 'row',
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#ccc',
     backgroundColor:'rgba(128, 128, 128, 0.5)',
     borderRadius:16,
-    marginVertical:2
+    marginVertical:2,
   },
 });
 
