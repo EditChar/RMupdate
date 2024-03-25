@@ -3,7 +3,7 @@ import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert, Image, Image
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import globalStyles from '../styles/globalStyles';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 const FavoriteList = ({ navigation }) => {
@@ -65,7 +65,7 @@ const FavoriteList = ({ navigation }) => {
       />
         <Text style={{color:'white', fontWeight:'bold'}}>{item.name}</Text>
         <TouchableOpacity onPress={() => handleRemove(item.id)}>
-          <Icon name="trash" size={40} color="red" />
+          <Icon name="trash-can" size={40} color="red" />
         </TouchableOpacity>
       </View>
     </TouchableOpacity>

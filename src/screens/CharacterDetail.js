@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Alert} from 'react-native';
 import axios from 'axios';
 import globalStyles from '../styles/globalStyles';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import PushNotification from 'react-native-push-notification';
 
@@ -121,7 +121,7 @@ const CharacterDetail = ({ route, navigation }) => {
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginRight:30 }}>
           <Text style={globalStyles.characterStatus}>Status: {characterData.status}</Text>
         <TouchableOpacity onPress={addToFavorites}>
-          <Icon name={isFavorite ? 'heart' : 'heart-o'} size={50} color={isFavorite ? 'red' : 'black'} />
+          <Icon name={isFavorite ? 'heart' : 'heart-outline'} size={50} color={isFavorite ? 'red' : 'black'} />
         </TouchableOpacity>
       </View>
       <Text style={globalStyles.characterSpecies}>Species: {characterData.species}</Text>
